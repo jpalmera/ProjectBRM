@@ -3,23 +3,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-
                     <div class="card mt-4 text-white">
-                        <div class="card-body ">
+                        <div class="card-body">
                             <h4 class="phone mb-5"> <strong>LATEST BLOG</strong></h4>
-                            <span>Nullam sem arcu, conge vitae leocusto ultrices.</span>
-                            <p style="font-size: smaller">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                         </div>
-                        <div class="card-body border-top">
-                            <span class="phone">Vitae tempor nunc. Nunc tortor risus, viverra sit ametm.</span>
-                            <p style="font-size: smaller">November 19 2014, By cad Suramerica </p>
+
+                        <div class="card-body border-top" *ngFor='let latestblog of latestblogs'>
+                            <span class="{{ latestblog.class }}">{{ latestblog.name }}</span>
+                            <p class="small">{{ latestblog.description }} </p>
                         </div>
+
                         <div class="card-body border-top">
-                            <span>Tempor dui mattis non, Vestibulum vel pelientesque lectus.</span>
-                            <p style="font-size: smaller">Dicember 25 2014, By cad Suramerica </p>
-                        </div>
-                        <div class="card-body border-top">
-                            <p style="font-size: smaller">Jaan Palmera Almanza </p>
+                            <p style="font-size: smaller"> {{ name }} </p>
                         </div>
 
                     </div>
@@ -55,10 +50,10 @@
 
     </div>
     <!--##############################################-->
-    <div class="footer2 w-100" style="font-size: smaller">
-        <div class="container mt-4" style="">
-            <span class="mt-5">HOME | BLOG | AGENTS | OUR LISTINGS | BUY | SELL | AGENTS | NEIGHBORDHOODS | CONTACT</span>
-            <p>Copyright &copy; 2019 - Jaan Palmera Almanza</p>
+    <div class="footer2 w-100 small">
+        <div class="container mt-4">
+            <span class="mt-5" *ngFor='let menu of menus'> {{ menu.name }} |</span>
+            <p>Copyright &copy; 2019 - {{ name }}</p>
         </div>
     </div>
 

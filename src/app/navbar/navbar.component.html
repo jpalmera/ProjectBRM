@@ -11,13 +11,14 @@
     <div class="d-flex justify-content-end pt-3">
       <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <span class="glyphicon glyphicon-phone text-right"><img src="../../assets/img/local_phone.png"></span><strong
-          class="phone">936.760.7800</strong>
+          class="phone">{{ telephone }}</strong>
       </nav>
     </div>
 
     <!-- ####################### Navegacion #########################-->
     <div class="d-flex justify-content-end">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,41 +27,18 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">BLOG</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">AGENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">OUR LISTINGS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">BUY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">SELL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">AGENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">NEIGHBORDHOODS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">CONTACT</a>
+            <li class="nav-item" *ngFor="let menu of menus">
+              <a class="nav-link" href="{{ menu.url }}">{{ menu.name }} </a>
             </li>
           </ul>
-
         </div>
+
       </nav>
     </div>
 
-    <!-- ####################### Fin#########################-->
+
   </div>
+  <!-- ####################### Fin#########################-->
 
   <!-- ####################### Formulario #########################-->
   <div class="d-flex flex-column justify-content-center formulario">

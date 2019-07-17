@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { first } from './first';
+import { images, cards } from './images';
 
 @Component({
   selector: 'app-structure',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./structure.component.css']
 })
 export class StructureComponent implements OnInit {
+  first = first;
+  images = images;
+  cards = cards;
 
   constructor() { }
 
