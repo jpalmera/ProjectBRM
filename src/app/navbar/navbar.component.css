@@ -1,0 +1,37 @@
+.header {
+    background: url(../../assets/img/rancho.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .header .navbar {
+    background-color: transparent !important;
+    /*background: rgba(0,0,0,0.1) !important;*/
+  }
+  .contnav{
+    background: rgba(0,0,0,0.1) !important;
+    padding-right: 10%;
+    
+  }
+  .logo{
+    padding-left: 10%; 
+  }
+
+  
+
+  .phone{
+    color: yellow;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: yellow !important;
+
+  }
+  .formulario{
+    margin-top: 20%; 
+    background: rgba(0,0,0,0.7) !important;
+    padding: 20px;
+  }
+  

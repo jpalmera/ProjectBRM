@@ -1,0 +1,23 @@
+.footer{
+   
+    background: url(../../assets/img/muebles.jpg) no-repeat center;
+    
+    background-size: cover;
+    min-height: 60vh;
+    
+    
+}
+.footer1{
+    background: rgba(0,0,0,.8) !important;
+   
+}
+.footer2{
+    background: rgba(236, 253, 0, 0.7) !important;
+   
+}
+.phone{
+    color: yellow;
+}
+.card{
+    background-color: transparent !important;
+}

@@ -1,0 +1,53 @@
+
+  .imagen1{
+    background: url(../../assets/img/mansion1.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen2{
+    background: url(../../assets/img/mansion2.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen3{
+    background: url(../../assets/img/mansion3.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen4{
+    background: url(../../assets/img/mansion4.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen5{
+    background: url(../../assets/img/mansion5.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen6{
+    background: url(../../assets/img/mansion6.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen7{
+    background: url(../../assets/img/mansion7.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .imagen8{
+    background: url(../../assets/img/mansion8.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+  }
+  .colorcaja{
+    
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0.1), #000) !important;
+
+  }
+
+  .fodo{
+    background:   #f9f9fa  ;
+  }
+ .phone{
+   color: yellow;
+ }
